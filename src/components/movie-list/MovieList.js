@@ -1,6 +1,7 @@
 import React from "react";
 import "./movie-list.scss";
 import Movie from "../movie/Movie";
+import ErrorBoundary from "../error-boundary/ErrorBoundary";
 
 const MovieList = () => {
   const movies = [
@@ -52,7 +53,9 @@ const MovieList = () => {
       <h5>39 movies found</h5>
       <div className="movies-all">
         {movies.map((movie) => (
-          <Movie movie={movie} key={movie.id} />
+          <ErrorBoundary key={movie.id}>
+            <Movie movie={movie} />
+          </ErrorBoundary>
         ))}
       </div>
     </div>
