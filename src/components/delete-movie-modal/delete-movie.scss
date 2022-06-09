@@ -1,0 +1,51 @@
+.modal-container {
+  background: rgba(35, 35, 35, 0.918051);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  font-family: "Montserrat";
+  font-style: normal;
+  text-transform: uppercase;
+  background: #232323;
+  padding: 50px 100px;
+  border-radius: 10px;
+  position: relative;
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 55px;
+    color: #fff;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  &-title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 1px;
+    color: #ffffff;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  button {
+    background: #f65261;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 16px 48px;
+    cursor: pointer;
+  }
+}
