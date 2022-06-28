@@ -1,0 +1,37 @@
+.movie-details {
+  padding: 20px 70px 30px;
+  position: relative;
+  font-family: "Montserrat";
+  background: hsl(0, 0%, 14%);
+  color: #fff;
+
+  &-search {
+    color: #f65261;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    transform: rotate(-45deg);
+    float: right;
+    cursor: pointer;
+  }
+
+  &-info {
+    display: flex;
+    margin-top: 70px;
+    img {
+      width: 320px;
+      height: 486px;
+      object-fit: cover;
+      margin-right: 50px;
+    }
+    div {
+      div {
+        color: #f65261;
+        text-transform: uppercase;
+      }
+      p {
+        opacity: 0.6;
+      }
+    }
+  }
+}
